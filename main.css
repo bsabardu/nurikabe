@@ -1,0 +1,100 @@
+body {
+    font-family: roboto;
+    font-size: 12px;
+    background-color: #f1efeb;
+    color:  #2e3437;
+
+}
+
+.content {
+    text-align: center;
+}
+
+
+table {
+    align-content: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 0 1px 4px rgba(115,115,115,.5);
+    border-color: #ddd;
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+  }
+
+
+td {
+    border : solid 2px #2e3437
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+#gameplay{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding : 5px 20px;
+    margin : 0px 10px;
+    background-color: grey;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    color:#fff;
+}
+
+.selected {
+    background: black;
+    color: white;
+}
+
+.rulestitle{
+    cursor : default;
+}
+
+.rulestext {
+    display: none;
+}
+
+.game {
+    background-color: #fff;
+    margin : 10px auto;
+    align-content: center;
+    border: 2px solid black;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    display: table;
+}
+
+
+.newtext {
+width: 100%;
+height: 100%;
+display: table-cell;
+font-size: 3rem;
+vertical-align: middle;
+padding: 30px;
+}
+
+.textonboard {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    font-size: 3rem;
+    vertical-align: middle;
+    padding: 30px;
+    }
+
+.wintext {
+    display : none;
+    }
+
+.losetext {
+    display : none;
+    }

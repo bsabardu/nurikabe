@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nurikabe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        
+    </head>
+    <body>
+        <div class="content">
+        <h1>Nurikabe Game</h1>
+        <div class ='rules'>
+                <p class='rulestitle'>Règles <i class="fas fa-chevron-circle-right"></i></p>
+                <p class ='rulestext'>
+                The challenge is to paint each cell black or white, subject to the following rules: </br>
+                - Each numbered cell is an island cell, the number in it is the number of cells in that island . </br>
+                - Each island must contain exactly one numbered cell </br>
+                - There must be only one sea, which is not allowed to contain "pools", which means 2x2 areas of black cells </br>
+                Press <strong>NEW GAME</strong> to start a game, press <strong>reset</strong> to remove every gray squares, <strong>press check</strong> when you think you have completed the game.</p>
+                </div>
+
+            <div class="game">
+                <div class="newtext textonboard">
+                    <p>Click new to play</p>
+                </div>
+                <div class="wintext textonboard">
+                    You won.<br/>
+                    You completed the puzzle in <span id='timecompleted'></span>
+                </div>
+                <div class="losetext textonboard"><p>Wrong.<br/>You have 15 seconds penalty, try again.</p>
+                </div>
+                <div id="gameplay">
+                <table id="board">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </table>
+            </div>
+            </div>
+            <div class ='buttons'>
+                <button id="new">New</button>
+                <button id="reset">Reset</button>
+                <button id="check">Check</button>
+            </div>
+        <div class='timer'>
+            <p>Timer : <span id='timer'></span> </p>
+        </div>
+        </div>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
